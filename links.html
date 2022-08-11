@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    header{
+        background-image: url(./img/Rectangle\ 1.png);
+        position: fixed;
+        width: 100%;
+        height: 50px;
+        z-index: 10;
+    }
+    .logo{
+        width: 2.5%;
+        margin-top: 7px;
+        margin-left: 20%;
+        float: left;
+    }
+    .headmenu_wrap{
+        margin-top: 12px;
+        margin-left: 33%;
+        float: left;
+    }
+    .headmenu{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .headmenu>li{
+        display: inline;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .headmenu>li>a{
+        color: #469D73;
+        text-decoration: none;
+    }
+    .point{
+        border-right: 1px solid #469D73;
+        border-left: 1px solid #469D73;
+    }
+    #sw{
+        padding-top: 20px;
+        background-image: url(./img/Union.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    #sw:hover{
+        background-image: url(./img/Union\ \(1\).png);
+        font-weight: bold;
+    }
+    #sol:hover{
+        background-image: url(./img/Rectangle\ 62.png);
+        font-weight: bold;
+    }
+    #dg:hover{
+        background-image: url(./img/Rectangle\ 62\ \(1\).png);
+        font-weight: bold;
+    }
+    #sol{
+        padding-top: 10px;
+        background-image: url(./img/Rectangle\ 57.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    #dg{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-image: url(./img/Rectangle\ 61.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    .member_list{
+        float: right;
+        list-style: none;
+        margin-right: 26.1%;
+        height: 0;
+        overflow: hidden;
+    }
+    .member_list>li{
+        text-align: center;
+        width: 145px;
+        height: 30px;
+    }
+    .member_list>li>a{
+        color: #469D73;
+        text-decoration: none;
+    }
+
+    html,body{
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .wrap{
+        padding-top: 9%;
+        background-image: url("./img/Exclude.png"),url("./img/Intersect.png"),url("./img/Ellipse\ 19.png");
+        background-repeat: no-repeat;
+        background-size: 25%,58%,17%;
+        background-position: 0% 170px, 100% 1250px, 100% 1000px;
+    }
+    .title{
+        padding: 0;
+        width: 12%;
+        margin-left: 44%;
+        margin-right: 44%;
+    }
+    img{
+        width: 100%;
+    } 
+    .link_header{
+        height: 43%;
+        border-radius: 30px 30px 0px 0px;
+    }
+    .link_box{
+        padding-top: 10%;
+        text-align: center;
+        height: 47%;
+        background-color: #F6F6F6;
+        border-radius: 0px 0px 30px 30px;
+    }
+    #link_1{
+        background-color: #F2DE68;
+    }
+    #link_2{
+        background-color: #469D73;
+    }
+    #link_3{
+        background-color: #98D994;
+    }
+    .link>div>img{
+        margin-top: 6%;
+        margin-left: 10%;
+        width: 26.25px;
+        height: 24.12px;
+    }
+    .link>div>a{
+        float: right;
+        font-size: 14px;
+        margin-top: 21px;
+        margin-right: 9%;
+        width: 59px;
+        height: 19px;
+        text-decoration: underline;
+    }
+    .link_wrap{
+        height: 130px;
+        width: 60%;
+        margin-left:20%;
+        margin-top: 5%;
+        margin-bottom: 6%;
+    }
+    .link{
+        width: 32.2%;
+        height: 100%;
+        float: left;
+    }
+    #link_center{
+        margin-right: 1.7%;
+        margin-left: 1.7%;
+    }
+    .question{
+        margin-bottom: 20px;
+        width: 100%;
+        height: 62px;
+        border-radius: 30px;
+        padding-top: 37px;
+        padding-right: 4%;
+        padding-left: 50px;
+        background-color: #F8F8F8;
+        overflow: hidden;
+    }
+    .questions{
+        width: 54%;
+        margin-left: 20.2%;
+        margin-top: 6%;
+        padding-bottom: 33%;
+    }
+    .question>button>img{
+        width: 15px;
+    }
+    footer{
+        margin:0;
+        padding: 0;
+        height: 375px;
+        background-image: url("./img/Exclude\ \(2\).png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: 100%;
+    }
+    button{
+        border: none;
+        background: none;
+    }
+    .question>button{
+        float: right;
+        margin-top: 3px;
+    }
+    .answer{
+        margin-top: 40px;
+    }
+    a{
+        color: white;
+    }
+
+    .fttit{
+        position: absolute;
+        margin-left: 19%;
+        margin-top: -17%;
+        width: 12%;
+
+
+    }
+    .imtxt{
+        position: absolute;
+        margin-left: 19%;
+        margin-top: -15%;
+        color: white;
+    }
+
+    
+
+    .t1{
+        font-size: 1px;
+        margin-top: 2%;
+    }
+
+    .t3{
+        font-size: 1px;
+    }
+    .bt3{
+        font-size: 14px;
+    }
+
+    .t4{
+        font-size: 1px;
+    }
+    .bt4{
+        font-size: 14px;
+    }
+
+    .t5{
+        font-size: 1px;
+    }
+    .bt5{
+        font-size: 14px;
+    }
+
+    .t6{
+        position: absolute;
+        margin-left: 59%;
+        margin-top: -1.5%;
+        font-size: 1px;
+        color: white;
+    }
+
+    @media screen and (max-width:1023px){
+        .wrap{
+            background-position: 0% 110px, 100% 1020px, 100% 800px;
+        }
+    }
+    @media screen and (max-width:764px){
+        .wrap{
+            background-position: 0% 100px, 100% 920px, 100% 720px;
+        }
+    }
+</style>
+<header>
+    <a href="./main.html">
+        <img class="logo" src="./img/Group 1.png">
+    </a>
+    <div class="headmenu_wrap">
+        <ul class="headmenu">
+            <li class="point"><a href="./project.html">PROJECTS</a></li>
+            <li onclick="DropMenu()"><a href="#">MEMBERS</a></li>
+            <li class="point"><a href="./Rules.html">RULES</a></li>
+            <li style="border-right: 1px solid #469D73;"><a href="./links.html">LINKS</li>
+            </ul>
+        </div>
+        <ul class="member_list" id="members">
+            <li id="sw"><a href="./soft.html">Software</a></li>
+            <li id="sol"><a href="./sol.html">Solution</a></li>
+            <li id="dg"><a href="./design.html">Design</a></li>
+        </ul>
+    </header>
+    <body>
+        <div class="wrap">
+            <div class="title"><img src="./img/Group 28.png"></div>
+            <div class="link_wrap">
+                <div class="link"><div class="link_header" id="link_1"><img src="./img/Frame.png"><a href="#">바로가기</a></div><div class="link_box">@ Uchin-dong22</div></div>
+                <div class="link" id="link_center"><div class="link_header" id="link_2"><img src="./img/Frame (1).png"><a href="#">바로가기</a></div><div class="link_box">@ Uchin-dong22</div></div>
+                <div class="link"><div class="link_header" id="link_3"><img src="./img/Frame (2).png"><a href="#">바로가기</a></div><div class="link_box">@ Uchin-dong22</div></div>
+            </div>
+            <div class="title"><img src="./img/Group 29.png"></div>
+            <div class="questions">
+                <div class="question"id="drop1" >
+                    Q .  우친동은 뭐하는 동아리인가유? 
+                    <button onclick="Dropqeustion('drop1')"><img src="./img//Icon material-keyboard-arrow-down (1).png"></button>
+                    <div class="answer">
+                        A . 완전 재미있는 동아리 입니다. ㅎ ㅎ ㅎ 들어오시면 절대 후 홰 ? 않하쉽니더<br>
+                        어느 동아릐 뷰다 더 재미있는 동아리 활동 만들어두릴 생각 완전 있숩니더 
+                    </div>
+                </div>
+                <div class="question"id="drop2" >
+                    Q .  우친동만의 장점은 무엇인가요? 
+                    <button onclick="Dropqeustion('drop2')"><img src="./img//Icon material-keyboard-arrow-down (1).png"></button>
+                    <div class="answer">
+                        A . 완전 재미있는 동아리 입니다. ㅎ ㅎ ㅎ 들어오시면 절대 후 홰 ? 않하쉽니더<br>
+                        어느 동아릐 뷰다 더 재미있는 동아리 활동 만들어두릴 생각 완전 있숩니더 
+                    </div>
+                </div>
+                <div class="question" id="drop3">
+                    Q .  우친동에선 어떤 활동을 하나요?
+                    <button onclick="Dropqeustion('drop3')"><img src="./img//Icon material-keyboard-arrow-down (1).png"></button>
+                    <div class="answer">
+                        A . 완전 재미있는 동아리 입니다. ㅎ ㅎ ㅎ 들어오시면 절대 후 홰 ? 않하쉽니더<br>
+                        어느 동아릐 뷰다 더 재미있는 동아리 활동 만들어두릴 생각 완전 있숩니더 
+                    </div>
+                </div>
+                <div class="question" id="drop4">
+                    Q .  우친동은 무슨 뜻 인가요? 
+                    <button onclick="Dropqeustion('drop4')"><img src="./img//Icon material-keyboard-arrow-down (1).png"></button>
+                    <div class="answer">
+                        A . 완전 재미있는 동아리 입니다. ㅎ ㅎ ㅎ 들어오시면 절대 후 홰 ? 않하쉽니더<br>
+                        어느 동아릐 뷰다 더 재미있는 동아리 활동 만들어두릴 생각 완전 있숩니더 
+                    </div>
+                </div>
+                <div class="question" id="drop5">
+                    Q .  우친동 지원 방법이 궁급해요~ 
+                    <button onclick="Dropqeustion('drop5')"><img src="./img//Icon material-keyboard-arrow-down (1).png"></button>
+                    <div class="answer">
+                        A . 완전 재미있는 동아리 입니다. ㅎ ㅎ ㅎ 들어오시면 절대 후 홰 ? 않하쉽니더<br>
+                        어느 동아릐 뷰다 더 재미있는 동아리 활동 만들어두릴 생각 완전 있숩니더 
+                    </div>
+                </div>
+            </div>
+            <footer></footer>
+        </div>
+
+        <div class="fttit">
+            <img src="./img/fttit.png" width="100%">
+        </div>
+        <div class="imtxt">
+          
+          <div class="t1">
+            제작 : 우리친해요동아리 일동 위치 : (08821) 서울시 관악구 호암로 546 미림여자정보과학고등학교 응용1실
+            <br>
+            우리친해요동아리 일동 : 권하은 금나리 김지우 박승채 박하은 안서연 양지아 오은채 인서진 임수연 엄희주 정유진 고낙은
+        </div>
+
+        <br>
+
+        <div class="t3">
+            이메일 문의
+        </div>
+
+        <div class="bt3">
+            woochindong@gamil.com
+        </div>
+        <br>
+        <div class="t4">
+            대표번호
+        </div>
+
+        <div class="bt4">
+            02-872-4071
+        </div>
+        <br>
+        <div class="t5">
+            FAX
+        </div>
+
+        <div class="bt5">
+            02-887-0856
+        </div>
+        <br>  
+        
+
+        
+    </div>
+    <div class="t6">
+        개인정보 보호 방침 | 동아리 정보 | Copyright 2021 by WOOCHINDONG all right reserved.
+    </div>
+
+</body>
+<script>
+    let cnt=[0,0,0,0,0];
+    let index;
+    function Dropqeustion(thisId){
+        switch(thisId){
+            case "drop1": index=0; break;
+            case "drop2": index=1; break;
+            case "drop3": index=2; break;
+            case "drop4": index=3; break;
+            case "drop5": index=4; break;
+        }
+        if((++cnt[index])%2==0){
+            document.getElementById(thisId).style.height="62px";
+            document.getElementById("question").style.overflow="hidden";
+        }
+        else {
+            document.getElementById(thisId).style.height="150px";
+            document.getElementById("question").style.overflow="none";
+        }
+    }
+</script>
+</html>
+<script>
+  let cnt_li=0;
+  function DropMenu(){
+    cnt_li++;
+    if(cnt_li%2==0){
+      document.getElementById("members").style.overflow="hidden";
+      document.getElementById("members").style.height="0px";
+  }
+  else{
+      document.getElementById("members").style.overflow="none";
+      document.getElementById("members").style.height="200px";
+  }
+}
+</script>

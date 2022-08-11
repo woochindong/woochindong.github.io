@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+
+		header{
+			background-image: url(./img/Rectangle\ 1.png);
+			position: fixed;
+			width: 100%;
+			height: 50px;
+			z-index: 10;
+		}
+		.logo{
+			width: 2.5%;
+			margin-top: 7px;
+			margin-left: 20%;
+			float: left;
+		}
+		.headmenu_wrap{
+			margin-top: 12px;
+			margin-left: 33%;
+			float: left;
+		}
+		.headmenu{
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		.headmenu>li{
+			display: inline;
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+		.headmenu>li>a{
+			color: #469D73;
+			text-decoration: none;
+		}
+		.point{
+			border-right: 1px solid #469D73;
+			border-left: 1px solid #469D73;
+		}
+		#sw{
+			padding-top: 20px;
+			background-image: url(./img/Union.png);
+			background-repeat: no-repeat;
+			background-size: 100%;
+		}
+		#sw:hover{
+			background-image: url(./img/Union\ \(1\).png);
+			font-weight: bold;
+		}
+		#sol:hover{
+			background-image: url(./img/Rectangle\ 62.png);
+			font-weight: bold;
+		}
+		#dg:hover{
+			background-image: url(./img/Rectangle\ 62\ \(1\).png);
+			font-weight: bold;
+		}
+		#sol{
+			padding-top: 10px;
+			background-image: url(./img/Rectangle\ 57.png);
+			background-repeat: no-repeat;
+			background-size: 100%;
+		}
+		#dg{
+			padding-top: 10px;
+			padding-bottom: 10px;
+			background-image: url(./img/Rectangle\ 61.png);
+			background-repeat: no-repeat;
+			background-size: 100%;
+		}
+		.member_list{
+			float: right;
+			list-style: none;
+			margin-right: 26.1%;
+			height: 0;
+			overflow: hidden;
+		}
+		.member_list>li{
+			text-align: center;
+			width: 145px;
+			height: 30px;
+		}
+		.member_list>li>a{
+			color: #469D73;
+			text-decoration: none;
+		}
+
+		body{
+			padding: 0px;
+			margin: 0px;
+		}
+
+		.mc1{
+			position: absolute;
+			width: 44%;
+			margin-left: 56%;
+		}
+
+		.mc2{
+			position: absolute;
+			margin-left: 4%;
+			padding-top: 25%;
+			width: 20%;
+			z-index: 1;
+		}
+
+		.mc3{
+			position: absolute;
+			width: 18%;
+			padding-top: 195%;
+			margin-left: 0%;
+			z-index: 1;
+		}
+
+		.mc4{
+			position: absolute;
+			margin-left: 60%;
+			padding-top: 203%;
+			width: 40%;
+			z-index: 1;
+		}
+
+		.msom{
+			position: absolute;
+			width: 46%;
+			padding-top: 28%;
+			height: 20%;
+		}
+
+		.mmain{
+			position: absolute;
+			width: 63%;
+			padding-top: 15%;
+			margin-left: 20%;
+			z-index: 2;
+		}
+
+		/*mp1*/
+		.mp1{
+			position: absolute;
+			padding-top: 83%;
+			width: 26%;
+			margin-left: 55%;
+			z-index: 1;
+		}
+
+		.mp1cline{
+			position: absolute;
+			padding-top: 81.5%;
+			width: 14%;
+			margin-left: 53.5%;
+			z-index: 2;
+		}
+
+		.mp1txt{
+			position: absolute;
+			padding-top: 104.5%;
+			width: 1%;
+			margin-left: 82%;
+			z-index: 2;
+		}
+
+		.mrec{
+			position: absolute;
+			padding-top: 100.5%;
+			width: 100%;
+			height: 7%;
+		}
+
+		.arrow{
+			position: absolute;
+			width: 19%;
+			margin-top: 110%;
+			margin-left: 30%;
+		}
+
+		.arrowtxt1{
+			position: absolute;
+			margin-top: 107.5%;
+			margin-left: 30%;
+			z-index: 2;
+			font-size: 18px;
+		}
+
+		.arrowtxt2{
+			position: absolute;
+			margin-top: 112%;
+			margin-left: 39%;
+			text-align: right;
+			z-index: 2;
+			font-size: 18px;
+		}
+
+		/*mp2*/
+		.mp2{
+			position: absolute;
+			padding-top: 130%;
+			width: 26%;
+			margin-left: 20%;
+			z-index: 1;
+
+		}
+
+		.mp2cline{
+			position: absolute;
+			padding-top: 128.5%;
+			width: 14%;
+			margin-left: 33.5%;
+			z-index: 2;
+
+		}
+		.mp2txt{
+			position: absolute;
+			padding-top: 149.6%;
+			width: 0.85%;
+			margin-left: 18%;
+			z-index: 2;
+		}
+
+		.mrec2{
+			position: absolute;
+			padding-top: 147.6%;
+			width: 100%;
+			height: 7%;
+		}
+
+		.arrow2{
+			position: absolute;
+			width: 19%;
+			margin-top: 157%;
+			margin-left: 50%;
+
+		}
+
+		.arrowtxt3{
+			position: absolute;
+			margin-top: 154.5%;
+			margin-left: 58%;
+			z-index: 2;
+			font-size: 18px;
+		}
+
+		.arrowtxt4{
+			position: absolute;
+			margin-top: 158.5%;
+			margin-left: 51%;
+			text-align: right;
+			z-index: 2;
+			font-size: 18px;
+		}		
+		/*mp3*/
+		.mp3{
+			position: absolute;
+			padding-top: 176%;
+			width: 26%;
+			margin-left: 55%;
+			z-index: 3;
+		}
+
+		.mp3cline{
+			position: absolute;
+			padding-top: 174.5%;
+			width: 14%;
+			margin-left: 53.5%;
+			z-index: 2;
+		}
+
+		.mp3txt{
+			position: absolute;
+			padding-top: 197.5%;
+			width: 0.88%;
+			margin-left: 82%;
+			z-index: 3;
+		}
+
+		.mrec3{
+			position: absolute;
+			padding-top: 193.5%;
+			width: 100%;
+			height: 7%;
+			z-index: 2;
+		}
+
+		.arrow3{
+			position: absolute;
+			width: 19%;
+			margin-top: 203%;
+			margin-left: 30%;
+			z-index: 3;
+		}
+
+		.arrowtxt5{
+			position: absolute;
+			margin-top: 200.5%;
+			margin-left: 30%;
+			z-index: 2;
+			font-size: 18px;
+		}
+
+		.arrowtxt6{
+			position: absolute;
+			margin-top: 205%;
+			margin-left: 42%;
+			text-align: right;
+			z-index: 2;
+			font-size: 18px;
+		}
+		/*footer*/
+		.footer{
+			position: absolute;
+			margin-top: 232.05%;
+			z-index: 3;
+		}
+
+
+		.fttit{
+			position: absolute;
+			margin-left: 19%;
+			margin-top: 240%;
+			width: 12%;
+			z-index: 4;
+
+		}
+		.imtxt{
+			position: absolute;
+			margin-left: 19%;
+			margin-top: 242%;
+			z-index: 4;
+			color: white;
+		}
+
+
+		.t1{
+			font-size: 1px;
+			margin-top: 2%;
+		}
+
+		.t3{
+			font-size: 1px;
+		}
+		.bt3{
+			font-size: 14px;
+		}
+
+		.t4{
+			font-size: 1px;
+		}
+		.bt4{
+			font-size: 14px;
+		}
+
+		.t5{
+			font-size: 1px;
+		}
+		.bt5{
+			font-size: 14px;
+		}
+
+		.t6{
+			position: absolute;
+			margin-left: 59%;
+			margin-top: 257%;
+			font-size: 1px;
+			z-index: 5;
+			color: white;
+		}
+
+
+
+
+	</style>
+</head>
+<body>
+	<header>
+		<a href="./main.html">
+			<img class="logo" src="./img/Group 1.png">
+		</a>
+		<div class="headmenu_wrap">
+			<ul class="headmenu">
+				<li class="point"><a href="./project.html">PROJECTS</a></li>
+				<li onclick="DropMenu()"><a href="#">MEMBERS</a></li>
+				<li class="point"><a href="./Rules.html">RULES</a></li>
+				<li style="border-right: 1px solid #469D73;"><a href="./links.html">LINKS</li>
+				</ul>
+			</div>
+			<ul class="member_list" id="members">
+				<li id="sw"><a href="./soft.html">Software</a></li>
+				<li id="sol"><a href="./sol.html">Solution</a></li>
+				<li id="dg"><a href="./design.html">Design</a></li>
+			</ul>
+		</header>
+
+
+		<div class="mc1">
+			<img src="./img/mc1.png" width="100%">
+		</div>
+
+		<div class="mc2">
+			<img src="./img/mc2.png" width="100%">
+		</div>
+
+		<div class="msom">
+			<img src="./img/msom.png" width="100%">
+		</div>
+
+		<div class="mmain">
+			<img src="./img/mmain.png" width="100%">
+		</div>
+
+		<!-- mp1 -->
+		<div class="mp1">
+			<img src="./img/mp1.png" width="100%" >
+		</div>
+
+		<div class="mp1cline">
+			<img src="./img/mp1cline.png" width="100%">
+		</div>
+
+		<div class="mp1txt">
+			<img src="./img/mp1txt.png" width="100%">
+		</div>
+
+		<div class="mrec">
+			<img src="./img/mrec.png" width="100%">
+		</div>
+
+		<div class="arrow">
+			<img src="./img/arrow.png" width="100%">
+		</div>
+
+		<div class="arrowtxt1">
+			개성넘치는<br>
+			홈페이지 구경하기
+		</div>
+
+		<div class="arrowtxt2">
+			동아리원과<br>
+			화목한 팀프로젝트	
+		</div>
+
+		<!-- mp2 -->
+		<div class="mp2">
+			<img src="./img/mp2.png" width="100%" >
+		</div>
+
+		<div class="mp2cline">
+			<img src="./img/mp2cline.png" width="100%">
+		</div>
+
+		<div class="mp2txt">
+			<img src="./img/mp2txt.png" width="100%">
+		</div>
+
+		<div class="mrec2">
+			<img src="./img/mrec2.png" width="100%">
+		</div>
+
+		<div class="arrow2">
+			<img src="./img/arrow2.png" width="100%">
+		</div>
+
+		<div class="arrowtxt3">
+			데굴데굴 굴러가고<br>
+			굴렀던 게임 제작기
+		</div>
+
+		<div class="arrowtxt4">
+			2022 STAC 개발
+
+
+		</div>
+		<!-- mp3 -->
+		<div class="mp3">
+			<img src="./img/mp3.png" width="100%" >
+		</div>
+
+		<div class="mp3cline">
+			<img src="./img/mp3cline.png" width="100%">
+		</div>
+
+		<div class="mp3txt">
+			<img src="./img/mp3txt.png" width="100%">
+		</div>
+
+		<div class="mrec3">
+			<img src="./img/mrec3.png" width="100%">
+		</div>
+
+		<div class="arrow3">
+			<img src="./img/arrow3.png" width="100%">
+		</div>
+
+		<div class="arrowtxt5">
+			왁자지껄 우친동<br> 
+			활동 보러가기
+		</div>
+
+		<div class="arrowtxt6">
+			SINCE 2022	
+		</div>
+
+		<div class="mc3">
+			<img src="./img/mc3.png" width="100%">
+		</div>
+
+		<div class="mc4">
+			<img src="./img/mc4.png" width="100%">
+		</div>
+		<!-- footer -->
+		<div class="footer">
+			<img src="./img/Exclude (2).png" width="100%">
+		</div>
+
+		<div class="fttit">
+			<img src="./img/fttit.png" width="100%">
+		</div>
+		<div class="imtxt">
+
+			<div class="t1">
+				제작 : 우리친해요동아리 일동 위치 : (08821) 서울시 관악구 호암로 546 미림여자정보과학고등학교 응용1실
+				<br>
+				우리친해요동아리 일동 : 권하은 금나리 김지우 박승채 박하은 안서연 양지아 오은채 인서진 임수연 엄희주 정유진 고낙은
+			</div>
+
+			<br>
+
+			<div class="t3">
+				이메일 문의
+			</div>
+
+			<div class="bt3">
+				woochindong@gamil.com
+			</div>
+			<br>
+			<div class="t4">
+				대표번호
+			</div>
+
+			<div class="bt4">
+				02-872-4071
+			</div>
+			<br>
+			<div class="t5">
+				FAX
+			</div>
+
+			<div class="bt5">
+				02-887-0856
+			</div>
+			<br>  
+
+
+
+		</div>
+		<div class="t6">
+			개인정보 보호 방침 | 동아리 정보 | Copyright 2021 by WOOCHINDONG all right reserved.
+		</div>
+	</body>
+	</html>
+	<script>
+		let cnt_li=0;
+		function DropMenu(){
+			cnt_li++;
+			if(cnt_li%2==0){
+				document.getElementById("members").style.overflow="hidden";
+				document.getElementById("members").style.height="0px";
+			}
+			else{
+				document.getElementById("members").style.overflow="none";
+				document.getElementById("members").style.height="200px";
+			}
+		}
+	</script>
