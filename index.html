@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>우친동 홈페이지</title>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      font-family: "Inter", sans-serif;
+      width: 100%;
+      height: 50px;
+      background-image: url(./img/Rectangle\ 1.png);
+      position: fixed;
+      z-index: 10;
+    }
+    .logo {
+      width: 2.5%;
+      margin-top: 7px;
+      margin-left: 20%;
+      float: left;
+    }
+    .headmenu_wrap {
+      margin-top: 12px;
+      margin-left: 33%;
+      float: left;
+    }
+    .headmenu {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .headmenu > li {
+      display: inline;
+      float: left;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    .headmenu > li > a {
+      color: #469d73;
+      text-decoration: none;
+    }
+    .headmenu > li > ul > a {
+      color: #469d73;
+      text-decoration: none;
+    }
+    .point {
+      border-right: 1px solid #469d73;
+      border-left: 1px solid #469d73;
+    }
+    #sw:hover {
+      background-image: url(./img/Hit.png);
+      font-weight: 500;
+    }
+    #sol:hover {
+      background-image: url(./img/Him.png);
+      font-weight: 500;
+    }
+    #dg:hover {
+      background-image: url(./img/Hib.png);
+      font-weight: 500;
+    }
+    #sw {
+      margin-top: 15px;
+      padding-top: 20px;
+      padding-bottom: 10px;
+      background-image: url(./img/Hitbg.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+    #sol {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      background-image: url(./img/Himbg.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+    #dg {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      background-image: url(./img/Hibbg.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+    #members {
+      overflow: hidden;
+      height: 30px;
+      text-align: center;
+      padding: 0;
+    }
+    .members_list {
+      width: 136px;
+      height: 30px;
+    }
+    .members_list > a {
+      color: #469d73;
+      text-decoration: none;
+    }
+    .Ma1 {
+      position: absolute;
+
+      width: 19%;
+      margin-top: 110%;
+      margin-left: 30%;
+      z-index: 3;
+    }
+
+    .Ma2 {
+      position: absolute;
+
+      width: 19%;
+      margin-top: 157%;
+      margin-left: 50%;
+      z-index: 3;
+    }
+
+    .Ma3 {
+      position: absolute;
+
+      width: 19%;
+      margin-top: 203%;
+      margin-left: 30%;
+      z-index: 3;
+    }
+
+    .Mcu1 {
+      position: absolute;
+
+      margin-top: 81.5%;
+      width: 14%;
+      margin-left: 53.5%;
+      z-index: 2;
+    }
+
+    .Mcu2 {
+      position: absolute;
+
+      margin-top: 128.5%;
+      width: 14%;
+      margin-left: 33.5%;
+      z-index: 2;
+    }
+
+    .Mcu3 {
+      position: absolute;
+
+      margin-top: 174.5%;
+      width: 14%;
+      margin-left: 53.5%;
+      z-index: 2;
+    }
+
+    .Mf1 {
+      position: absolute;
+
+      position: absolute;
+      width: 44%;
+      margin-left: 56%;
+    }
+
+    .Mf2 {
+      position: absolute;
+
+      width: 18%;
+      margin-top: 195%;
+      margin-left: 0%;
+      z-index: 1;
+    }
+
+    .Mf3 {
+      position: absolute;
+
+      margin-left: 60%;
+      margin-top: 203%;
+      width: 40%;
+      z-index: 1;
+    }
+
+    .Mf4 {
+      position: absolute;
+
+      margin-left: 0%;
+      margin-top: 25%;
+      width: 48%;
+    }
+
+    .Mi1 {
+      position: absolute;
+
+      margin-top: 83%;
+      width: 26%;
+      margin-left: 55%;
+      z-index: 1;
+    }
+
+    .Mi2 {
+      position: absolute;
+
+      margin-top: 130%;
+      width: 26%;
+      margin-left: 20%;
+      z-index: 1;
+    }
+
+    .Mi3 {
+      position: absolute;
+
+      margin-top: 176%;
+      width: 26%;
+      margin-left: 55%;
+      z-index: 3;
+    }
+
+    .Mi4 {
+      position: absolute;
+
+      margin-top: 18%;
+      width: 30%;
+      margin-left: 36%;
+    }
+
+    .Mi51 {
+      position: absolute;
+
+      margin-top: 83%;
+      width: 26%;
+      margin-left: 55%;
+      z-index: 4;
+
+      opacity: 0;
+      transition: opacity 0.5s linear;
+    }
+
+    .Mi52 {
+      position: absolute;
+
+      margin-top: 130%;
+      width: 26%;
+      margin-left: 20%;
+      z-index: 4;
+
+      opacity: 0;
+      transition: opacity 0.5s linear;
+    }
+
+    .Mi53 {
+      position: absolute;
+
+      margin-top: 176%;
+      width: 26%;
+      margin-left: 55%;
+      z-index: 4;
+
+      opacity: 0;
+      transition: opacity 0.5s linear;
+    }
+
+    .Ml1 {
+      position: absolute;
+
+      margin-top: 44%;
+      height: 53%;
+      margin-left: 67.5%;
+    }
+
+    .Mr1 {
+      position: absolute;
+
+      margin-top: 100.5%;
+      width: 100%;
+      height: 7%;
+    }
+
+    .Mr2 {
+      position: absolute;
+
+      margin-top: 147.6%;
+      width: 100%;
+      height: 7%;
+    }
+
+    .Mr3 {
+      position: absolute;
+
+      margin-top: 193.5%;
+      width: 100%;
+      height: 7%;
+      z-index: 2;
+    }
+
+    .Mfooter {
+      position: absolute;
+
+      margin-top: 232.05%;
+      z-index: 3;
+    }
+
+    .Mi1txt {
+      position: absolute;
+
+      font-family: "Noto Sans KR", sans-serif;
+      margin-top: 106.8%;
+      margin-left: 30%;
+      font-size: 1.2em;
+
+      font-weight: 400;
+
+      z-index: 4;
+    }
+
+    .Mi1txt2 {
+      position: absolute;
+
+      font-family: "Noto Sans KR", sans-serif;
+      margin-top: 111.8%;
+      margin-left: 39.2%;
+      text-align: right;
+      font-size: 1.2em;
+
+      font-weight: 400;
+
+      z-index: 4;
+    }
+
+    .Mi1txt3 {
+      position: absolute;
+
+      font-family: "Noto Sans HK", sans-serif;
+      margin-top: 107.8%;
+      margin-left: 81.5%;
+      font-size: 0.8em;
+      writing-mode: vertical-rl;
+
+      white-space: nowrap;
+      font-weight: 900;
+      letter-spacing: 0.01px;
+      z-index: 4;
+    }
+
+    .Mi2txt {
+      position: absolute;
+
+      font-family: "Noto Sans KR", sans-serif;
+      margin-top: 153.8%;
+      margin-left: 59%;
+      font-size: 1.2em;
+      text-align: right;
+
+      font-weight: 400;
+
+      z-index: 4;
+    }
+
+    .Mi2txt2 {
+      position: absolute;
+
+      font-family: "Noto Sans KR", sans-serif;
+      margin-top: 158.5%;
+      margin-left: 50%;
+      text-align: right;
+      font-size: 1.2em;
+
+      font-weight: 400;
+
+      z-index: 4;
+    }
+
+    .Mi2txt3 {
+      position: absolute;
+
+      font-family: "Noto Sans HK", sans-serif;
+      margin-top: 153%;
+      margin-left: 18%;
+      font-size: 0.8em;
+      writing-mode: vertical-rl;
+
+      -webkit-transform: rotate(180deg);
+      white-space: nowrap;
+      font-weight: 900;
+      letter-spacing: 0.01px;
+      z-index: 4;
+    }
+
+    .Mi3txt {
+      position: absolute;
+
+      font-family: "Noto Sans KR", sans-serif;
+      margin-top: 200%;
+      margin-left: 29.9%;
+      font-size: 1.2em;
+
+      font-weight: 400;
+
+      z-index: 4;
+    }
+
+    .Mi3txt2 {
+      position: absolute;
+
+      font-family: "Noto Sans KR", sans-serif;
+      margin-top: 204.5%;
+      margin-left: 42.2%;
+      text-align: right;
+      font-size: 1.2em;
+
+      font-weight: 400;
+
+      z-index: 4;
+    }
+
+    .Mi3txt3 {
+      position: absolute;
+
+      font-family: "Noto Sans HK", sans-serif;
+      margin-top: 201%;
+      margin-left: 81.5%;
+      font-size: 0.8em;
+      writing-mode: vertical-lr;
+
+      white-space: nowrap;
+      font-weight: 900;
+      letter-spacing: 0.01px;
+      z-index: 4;
+    }
+
+    .Mi4txt1 {
+      position: absolute;
+
+      font-family: "Noto Sans KR", sans-serif;
+      margin-top: 15%;
+      margin-left: 44%;
+      font-size: 4.5em;
+      color: #469d73;
+
+      font-weight: 900;
+
+      z-index: 4;
+    }
+
+    .Mi4txt2 {
+      position: absolute;
+
+      font-family: "Noto Sans KR", sans-serif;
+      margin-top: 32%;
+      margin-left: 33%;
+      font-size: 1em;
+      color: #469d73;
+
+      font-weight: 700;
+
+      z-index: 4;
+    }
+
+    .Mi4txt3 {
+      position: absolute;
+      text-align: right;
+
+      font-family: "Noto Sans HK", sans-serif;
+      margin-top: 34%;
+      margin-left: 29%;
+      font-size: 0.8em;
+
+      font-weight: 400;
+      z-index: 4;
+    }
+
+    .Mi4txt4 {
+      position: absolute;
+
+      font-family: "Noto Sans KR", sans-serif;
+      margin-top: 38%;
+      margin-left: 32%;
+      font-size: 1em;
+      color: #469d73;
+
+      font-weight: 700;
+
+      z-index: 4;
+    }
+
+    .Mi4txt5 {
+      position: absolute;
+      text-align: right;
+
+      font-family: "Noto Sans HK", sans-serif;
+      margin-top: 40%;
+      margin-left: 27%;
+      font-size: 0.8em;
+
+      font-weight: 400;
+      z-index: 4;
+    }
+
+    .Mi4txt6 {
+      position: absolute;
+
+      font-family: "Noto Sans KR", sans-serif;
+      margin-top: 45.5%;
+      margin-left: 32%;
+      font-size: 1em;
+      color: #469d73;
+
+      font-weight: 700;
+
+      z-index: 4;
+    }
+
+    .Mi4txt7 {
+      position: absolute;
+      text-align: right;
+
+      font-family: "Noto Sans HK", sans-serif;
+      margin-top: 47.5%;
+      margin-left: 27%;
+      font-size: 0.8em;
+
+      font-weight: 400;
+      z-index: 4;
+    }
+
+    .Mi4txt8 {
+      position: absolute;
+
+      font-family: "Noto Sans HK", sans-serif;
+      margin-top: 34%;
+      margin-left: 67%;
+      font-size: 0.8em;
+      writing-mode: vertical-lr;
+
+      font-weight: 900;
+      letter-spacing: 0.01px;
+      z-index: 4;
+    }
+
+    .Mi4txt9 {
+      position: absolute;
+
+      font-family: "Noto Sans KR", sans-serif;
+      margin-top: 66%;
+      margin-left: 21%;
+      font-size: 4.5em;
+      color: #469d73;
+
+      font-weight: 600;
+
+      z-index: 4;
+    }
+
+    .Mi4txt10 {
+      position: absolute;
+      text-align: right;
+
+      font-family: "Noto Sans HK", sans-serif;
+      margin-top: 70%;
+      margin-left: 59.5%;
+      font-size: 0.8em;
+
+      font-weight: 700;
+      letter-spacing: 0.01px;
+      line-height: 130%;
+
+      z-index: 4;
+    }
+
+    .hov:hover .Mi51 {
+      opacity: 1;
+    }
+
+    .hov:hover .Mi52 {
+      opacity: 1;
+    }
+
+    .hov:hover .Mi53 {
+      opacity: 1;
+    }
+
+    .Mfootertxt {
+      position: absolute;
+
+      font-family: "Noto Sans KR", sans-serif;
+      margin-top: 231.5%;
+      margin-left: 19%;
+      z-index: 4;
+      color: white;
+    }
+
+    .Mfi {
+      position: absolute;
+
+      margin-top: 26%;
+      width: 4%;
+    }
+
+    .t2 {
+      margin-left: 5%;
+      margin-top: 24%;
+      font-weight: 700;
+      font-size: 1.5em;
+      letter-spacing: 0.2em;
+    }
+
+    .t1 {
+      margin-top: 3%;
+      font-weight: 200;
+      font-size: 0.2em;
+    }
+
+    .t3 {
+      margin-top: -2%;
+      font-weight: 200;
+      font-size: 0.2em;
+    }
+
+    .bt3 {
+      font-weight: 500;
+      font-size: 1em;
+    }
+
+    .t4 {
+      margin-top: -2%;
+      font-weight: 200;
+      font-size: 0.2em;
+    }
+    .bt4 {
+      font-weight: 500;
+      font-size: 1em;
+    }
+
+    .t5 {
+      margin-top: -2%;
+      font-weight: 200;
+      font-size: 0.2em;
+    }
+
+    .bt5 {
+      font-weight: 500;
+      font-size: 1em;
+    }
+
+    .t6 {
+      position: absolute;
+      margin-left: 65%;
+      margin-top: 255%;
+      font-size: 0.3em;
+      z-index: 5;
+      font-family: "Noto Sans KR", sans-serif;
+      color: white;
+      font-weight: 200;
+    }
+  </style>
+  <header>
+    <a href="./index.html"><img class="logo" src="./img/logo.png" /></a>
+    <div class="headmenu_wrap">
+      <ul class="headmenu">
+        <li class="point"><a href="./project.html">PROJECTS</a></li>
+        <li onclick="DropMenu()" id="members">
+          <a href="#">MEMBERS</a>
+          <ul style="padding: 0">
+            <li id="sw" class="members_list">
+              <a href="./soft.html">Software</a>
+            </li>
+            <li id="sol" class="members_list">
+              <a href="./sol.html">Solution</a>
+            </li>
+            <li id="dg" class="members_list">
+              <a href="./design.html">Design</a>
+            </li>
+          </ul>
+        </li>
+        <li class="point"><a href="./rules.html">RULES</a></li>
+        <li style="border-right: 1px solid #469d73">
+          <a href="./link.html">LINKS&FAQ</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <body>
+    <div class="Ma1">
+      <img src="./img/Ma1.png" width="100%" />
+    </div>
+
+    <div class="Ma2">
+      <img src="./img/Ma2.png" width="100%" />
+    </div>
+
+    <div class="Ma3">
+      <img src="./img/Ma3.png" width="100%" />
+    </div>
+
+    <div class="Mcu1">
+      <img src="./img/Mcu1.png" width="100%" />
+    </div>
+
+    <div class="Mcu2">
+      <img src="./img/Mcu2.png" width="100%" />
+    </div>
+
+    <div class="Mcu3">
+      <img src="./img/Mcu3.png" width="100%" />
+    </div>
+
+    <div class="Mf1">
+      <img src="./img/Mf1.png" width="100%" />
+    </div>
+
+    <div class="Mf2">
+      <img src="./img/Mf2.png" width="100%" />
+    </div>
+
+    <div class="Mf3">
+      <img src="./img/Mf3.png" width="100%" />
+    </div>
+
+    <div class="Mf4">
+      <img src="./img/Mf4.png" width="100%" />
+    </div>
+
+    <a href="#">
+      <div class="hov">
+        <div class="Mi1">
+          <img src="./img/Mi1.png" width="100%" />
+        </div>
+        <div class="Mi51">
+          <img src="./img/Mi5.png" width="100%" />
+        </div>
+      </div>
+    </a>
+
+    <a href="#">
+      <div class="hov">
+        <div class="Mi2">
+          <img src="./img/Mi2.png" width="100%" />
+        </div>
+
+        <div class="Mi52">
+          <img src="./img/Mi5.png" width="100%" />
+        </div>
+      </div>
+    </a>
+
+    <a href="#">
+      <div class="hov">
+        <div class="Mi3">
+          <img src="./img/Mi3.png" width="100%" />
+        </div>
+
+        <div class="Mi53">
+          <img src="./img/Mi5.png" width="100%" />
+        </div>
+      </div>
+    </a>
+
+    <div class="Mi1txt">
+      개성넘치는<br />
+      홈페이지 구경하기
+    </div>
+
+    <div class="Mi1txt2">
+      동아리원과<br />
+      화목한 팀프로젝트
+    </div>
+
+    <div class="Mi1txt3">HOMEPAGE MAKING STORY</div>
+
+    <div class="Mi2txt">
+      데굴데굴 굴러가고<br />
+      굴렀던 게임 제작기
+    </div>
+
+    <div class="Mi2txt2">2022 STAC 개발</div>
+
+    <div class="Mi2txt3">HI!EARTH GAME MAKING STORY</div>
+
+    <div class="Mi3txt">
+      왁자지껄 우친동<br />
+      활동 보러가기
+    </div>
+
+    <div class="Mi3txt2">SINCE 2022</div>
+
+    <div class="Mi3txt3">WOOCHINDONG ACTIVITES</div>
+
+    <div class="Mi4">
+      <img src="./img/Mi4.png" width="100%" />
+    </div>
+
+    <div>
+      <div class="Mi4txt1">WOOCHINDONG</div>
+
+      <div class="Mi4txt2">우리</div>
+
+      <div class="Mi4txt3">
+        선후배 상관없이
+        <br />
+        미림인이라면
+      </div>
+
+      <div class="Mi4txt4">친해요</div>
+
+      <div class="Mi4txt5">
+        게임하고,
+        <br />
+        프로젝트하고,
+        <br />
+        웃음과 정보를 나누는
+      </div>
+
+      <div class="Mi4txt6">동아리</div>
+
+      <div class="Mi4txt7">
+        활발한 선후배 관계와
+        <br />
+        전공 실력을 채우는
+        <br />
+        전공 동아리
+      </div>
+
+      <div class="Mi4txt8">MIRIMHIGHSCHOOL</div>
+
+      <div class="Mi4txt9">AFTERSCHOOL</div>
+
+      <div class="Mi4txt10">
+        WELLCOME
+        <br />
+        WOOCHINDONG
+      </div>
+    </div>
+
+    <div class="Ml1">
+      <img src="./img/Ml1.png" width="100%" height="100%" />
+    </div>
+
+    <div class="Mr1">
+      <img src="./img/Mr1.png" width="100%" />
+    </div>
+
+    <div class="Mr2">
+      <img src="./img/Mr2.png" width="100%" />
+    </div>
+
+    <div class="Mr3">
+      <img src="./img/Mr3.png" width="100%" />
+    </div>
+
+    <div class="Mfooter">
+      <img src="./img/Mfooter.png" width="100%" />
+    </div>
+
+    <div class="Mfootertxt">
+      <div class="Mfi">
+        <img src="./img/Mfi.png" width="100%" />
+      </div>
+
+      <div class="t2">WOOCHINDONG</div>
+
+      <div class="t1">
+        제작 : 우리친해요동아리 일동 위치 : (08821) 서울시 관악구 호암로 546
+        미림여자정보과학고등학교 응용1실
+        <br />
+        우리친해요동아리 일동 : 권하은 금나리 김지우 박승채 박하은 안서연 양지아
+        오은채 인서진 임수연 엄희주 정유진 고낙은
+      </div>
+
+      <br />
+
+      <div class="t3">이메일 문의</div>
+
+      <div class="bt3">woochindong@gamil.com</div>
+      <br />
+      <div class="t4">대표번호</div>
+
+      <div class="bt4">02-872-4071</div>
+      <br />
+      <div class="t5">FAX</div>
+
+      <div class="bt5">02-887-0856</div>
+      <br />
+    </div>
+
+    <div class="t6">
+      개인정보 보호 방침&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;동아리
+      정보&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copyright 2021 by
+      WOOCHINDONG all right reserved.
+    </div>
+  </body>
+</html>
+
+<script>
+  let cnt_li = 0;
+  function DropMenu() {
+    cnt_li++;
+    if (cnt_li % 2 == 0) {
+      document.getElementById("members").style.overflow = "hidden";
+      document.getElementById("members").style.height = "30px";
+    } else {
+      document.getElementById("members").style.overflow = "none";
+      document.getElementById("members").style.height = "200px";
+    }
+  }
+</script>

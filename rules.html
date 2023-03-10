@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>우친동 동아리 웹페이지</title>
+    <style type="text/css">
+      * {
+        -webkit-touch-callout: none;
+        user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -webkit-user-select: none;
+        -webkit-user-drag: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        font-family: "Inter", sans-serif;
+        width: 100%;
+        height: 50px;
+        background-image: url(./img/Rectangle\ 1.png);
+        position: fixed;
+        z-index: 10;
+      }
+      .logo {
+        width: 2.5%;
+        margin-top: 7px;
+        margin-left: 20%;
+        float: left;
+      }
+      .headmenu_wrap {
+        margin-top: 12px;
+        margin-left: 33%;
+        float: left;
+      }
+      .headmenu {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .headmenu > li {
+        display: inline;
+        float: left;
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+      .headmenu > li > a {
+        color: #469d73;
+        text-decoration: none;
+      }
+      .headmenu > li > ul > a {
+        color: #469d73;
+        text-decoration: none;
+      }
+      .point {
+        border-right: 1px solid #469d73;
+        border-left: 1px solid #469d73;
+      }
+      #sw:hover {
+        background-image: url(./img/Hit.png);
+        font-weight: bold;
+      }
+      #sol:hover {
+        background-image: url(./img/Him.png);
+        font-weight: bold;
+      }
+      #dg:hover {
+        background-image: url(./img/Hib.png);
+        font-weight: bold;
+      }
+      #sw {
+        margin-top: 15px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        background-image: url(./img/Hitbg.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+      #sol {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-image: url(./img/Himbg.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+      #dg {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-image: url(./img/Hibbg.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+      #members {
+        overflow: hidden;
+        height: 30px;
+        text-align: center;
+        padding: 0;
+      }
+      .members_list {
+        width: 136px;
+        height: 30px;
+      }
+      .members_list > a {
+        color: #469d73;
+        text-decoration: none;
+      }
+
+      .background_image {
+        background-image: url(./img/Rf1.png), url(./img/Rf2.png),
+          url(./img/Rf3.png), url(./img/Rfooter.png), url(./img/Rr1.png),
+          url(./img/Rr1.png), url(./img/Rr1.png), url(./img/Rr1.png),
+          url(./img/Rr1.png), url(./img/Rr1.png), url(./img/Rr1.png),
+          url(./img/Rr1.png), url(./img/Rr1.png);
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 2000px;
+        background-position: 100% 14%, 0% 0%, 0% 84%, 0% 100%, 54% 22%, 54% 27%,
+          54% 32%, 54% 37%, 54% 42%, 54% 47%, 54% 52%, 54% 57%, 54% 62%;
+        background-size: 16%, 22%, 100%, 100%, 53%, 53%, 53%, 53%, 53%, 53%, 53%,
+          53%, 53%;
+      }
+
+      .Rtitc {
+        background-image: url(./img/Rtitc.png);
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        background-position: 50% 9.9%;
+        background-size: 12%;
+      }
+
+      .Rtitc_text {
+        font-family: "Noto Sans KR", sans-serif;
+        margin-left: 48.4%;
+        padding-top: 13.8%;
+        font-weight: bold;
+      }
+
+      .Rr_ul {
+        margin-top: 14.5%;
+      }
+
+      #Rr1_text {
+        margin-left: 28%;
+        padding-bottom: 5%;
+      }
+
+      .Pfooter {
+        position: absolute;
+        margin-top: -20%;
+      }
+
+      .Mfootertxt {
+        position: absolute;
+
+        font-family: "Noto Sans KR", sans-serif;
+        margin-top: -20%;
+        margin-left: 19%;
+        z-index: 4;
+        color: white;
+      }
+
+      .Mfi {
+        position: absolute;
+
+        margin-top: 26%;
+        width: 4%;
+      }
+
+      .t2 {
+        margin-left: 5%;
+        margin-top: 24%;
+        font-weight: 700;
+        font-size: 1.5em;
+        letter-spacing: 0.2em;
+      }
+
+      .t1 {
+        margin-top: 3%;
+        font-weight: 200;
+        font-size: 0.2em;
+      }
+
+      .t3 {
+        margin-top: -2%;
+        font-weight: 200;
+        font-size: 0.2em;
+      }
+
+      .bt3 {
+        font-weight: 500;
+        font-size: 1em;
+      }
+
+      .t4 {
+        margin-top: -2%;
+        font-weight: 200;
+        font-size: 0.2em;
+      }
+      .bt4 {
+        font-weight: 500;
+        font-size: 1em;
+      }
+
+      .t5 {
+        margin-top: -2%;
+        font-weight: 200;
+        font-size: 0.2em;
+      }
+
+      .bt5 {
+        font-weight: 500;
+        font-size: 1em;
+      }
+      /*23.5*/
+      .t6 {
+        position: absolute;
+        margin-left: 65%;
+        margin-top: 3.5%;
+        font-size: 0.3em;
+        z-index: 5;
+        font-family: "Noto Sans KR", sans-serif;
+        color: white;
+        font-weight: 200;
+      }
+    </style>
+  </head>
+
+  <header>
+    <a href="./index.html"><img class="logo" src="./img/logo.png" /></a>
+    <div class="headmenu_wrap">
+      <ul class="headmenu">
+        <li class="point"><a href="./project.html">PROJECTS</a></li>
+        <li onclick="DropMenu()" class="member_list" id="members">
+          <a href="#">MEMBERS</a>
+          <ul style="padding: 0">
+            <li id="sw" class="members_list">
+              <a href="./soft.html">Software</a>
+            </li>
+            <li id="sol" class="members_list">
+              <a href="./sol.html">Solution</a>
+            </li>
+            <li id="dg" class="members_list">
+              <a href="./design.html">Design</a>
+            </li>
+          </ul>
+        </li>
+        <li class="point"><a href="./rules.html">RULES</a></li>
+        <li style="border-right: 1px solid #469d73">
+          <a href="./link.html">LINKS&FAQ</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <body>
+    <div class="background_image">
+      <div class="Rtitc">
+        <p class="Rtitc_text">RULES</p>
+
+        <ul class="Rr_ul">
+          <li id="Rr1_text">서로간의 예의 지키며 배려하기</li>
+          <li id="Rr1_text">유대감 형성을 위한 활동 참여하기</li>
+          <li id="Rr1_text">어색하더라도 편하게 이야기해보기</li>
+          <li id="Rr1_text">선후배간의 군기문화 없애기</li>
+          <li id="Rr1_text">과별, 학년별 갈등 조장하지 않기</li>
+          <li id="Rr1_text">갈등이 생긴다면 제 3자 동반 대화로 풀기</li>
+          <li id="Rr1_text">연락 꼬박꼬박 잘 보기</li>
+          <li id="Rr1_text">서로 비난, 비방 하지 않기</li>
+          <li id="Rr1_text">간지나고 건강한 우친동 만들기</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="Pfooter">
+      <img src="./img/Pfooter.png" width="100%" />
+    </div>
+
+    <div class="Mfootertxt">
+      <div class="Mfi">
+        <img src="./img/Mfi.png" width="100%" />
+      </div>
+
+      <div class="t2">WOOCHINDONG</div>
+
+      <div class="t1">
+        제작 : 우리친해요동아리 일동 위치 : (08821) 서울시 관악구 호암로 546
+        미림여자정보과학고등학교 응용1실
+        <br />
+        우리친해요동아리 일동 : 권하은 금나리 김지우 박승채 박하은 안서연 양지아
+        오은채 인서진 임수연 엄희주 정유진 고낙은
+      </div>
+
+      <br />
+
+      <div class="t3">이메일 문의</div>
+
+      <div class="bt3">woochindong@gamil.com</div>
+      <br />
+      <div class="t4">대표번호</div>
+
+      <div class="bt4">02-872-4071</div>
+      <br />
+      <div class="t5">FAX</div>
+
+      <div class="bt5">02-887-0856</div>
+      <br />
+    </div>
+
+    <div class="t6">
+      개인정보 보호 방침&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;동아리
+      정보&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copyright 2021 by
+      WOOCHINDONG all right reserved.
+    </div>
+  </body>
+</html>
+
+<script>
+  let cnt_li = 0;
+  function DropMenu() {
+    cnt_li++;
+    if (cnt_li % 2 == 0) {
+      document.getElementById("members").style.overflow = "hidden";
+      document.getElementById("members").style.height = "0px";
+    } else {
+      document.getElementById("members").style.overflow = "none";
+      document.getElementById("members").style.height = "200px";
+    }
+  }
+</script>

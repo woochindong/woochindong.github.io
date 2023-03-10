@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>우친동 홈페이지</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SOFTWARE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        -webkit-touch-callout: none;
+        user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -webkit-user-select: none;
+        -webkit-user-drag: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        font-family: "Inter", sans-serif;
+        width: 100%;
+        height: 50px;
+        background-image: url(./img/Rectangle\ 1.png);
+        position: fixed;
+        z-index: 10;
+      }
+      .logo {
+        width: 2.5%;
+        margin-top: 7px;
+        margin-left: 20%;
+        float: left;
+      }
+      .headmenu_wrap {
+        margin-top: 12px;
+        margin-left: 33%;
+        float: left;
+      }
+      .headmenu {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .headmenu > li {
+        display: inline;
+        float: left;
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+      .headmenu > li > a {
+        color: #469d73;
+        text-decoration: none;
+      }
+      .headmenu > li > ul > a {
+        color: #469d73;
+        text-decoration: none;
+      }
+      .point {
+        border-right: 1px solid #469d73;
+        border-left: 1px solid #469d73;
+      }
+      #sw:hover {
+        background-image: url(./img/Hit.png);
+        font-weight: bold;
+      }
+      #sol:hover {
+        background-image: url(./img/Him.png);
+        font-weight: bold;
+      }
+      #dg:hover {
+        background-image: url(./img/Hib.png);
+        font-weight: bold;
+      }
+      #sw {
+        margin-top: 15px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        background-image: url(./img/Hitbg.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+      #sol {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-image: url(./img/Himbg.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+      #dg {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-image: url(./img/Hibbg.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+      #members {
+        overflow: hidden;
+        height: 30px;
+        text-align: center;
+        padding: 0;
+      }
+      .members_list {
+        width: 136px;
+        height: 30px;
+      }
+      .members_list > a {
+        color: #469d73;
+        text-decoration: none;
+      }
+
+      #Title_circle {
+        position: absolute;
+        z-index: 2;
+        width: 11.5%;
+        margin-top: 12%;
+        margin-left: 44%;
+      }
+      #background_obj1 {
+        position: absolute;
+        z-index: 1;
+        width: 40%;
+        margin-top: 0%;
+        margin-left: 0%;
+      }
+      #background_obj2 {
+        position: absolute;
+        z-index: 1;
+        width: 54%;
+        margin-top: 143%;
+        margin-left: 46%;
+      }
+      #member1 {
+        position: absolute;
+        z-index: 3;
+        width: 30%;
+        margin-top: 18.5%;
+        margin-left: 20%;
+      }
+      #member2 {
+        position: absolute;
+        z-index: 3;
+        width: 30%;
+        margin-top: 52%;
+        margin-left: 50%;
+      }
+      #member3 {
+        position: absolute;
+        z-index: 3;
+        width: 30%;
+        margin-top: 85.5%;
+        margin-left: 20%;
+      }
+      #member4 {
+        position: absolute;
+        z-index: 3;
+        width: 30%;
+        margin-top: 119%;
+        margin-left: 50%;
+      }
+      #member5 {
+        position: absolute;
+        z-index: 3;
+        width: 30%;
+        margin-top: 152.5%;
+        margin-left: 20%;
+      }
+      #footer {
+        position: absolute;
+        z-index: 4;
+        width: 100%;
+        margin-top: 177%;
+        margin-left: 0%;
+      }
+      #Title {
+        position: absolute;
+        width: 5.9%;
+        z-index: 2;
+
+        font-family: "Inter", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1vmax;
+
+        text-align: center;
+        margin-top: 13.2%;
+        margin-left: 47%;
+
+        color: #000000;
+      }
+      #member1_text {
+        position: absolute;
+        width: 30%;
+        z-index: 4;
+
+        font-family: "Noto Sans KR", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.8vmax;
+
+        margin-top: 26.8%;
+        margin-left: 36%;
+
+        color: #323232;
+      }
+      #member1_text2 {
+        position: absolute;
+        width: 30%;
+        z-index: 4;
+
+        font-family: "Noto Sans KR", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.8vmax;
+
+        margin-top: 34%;
+        margin-left: 28.6%;
+
+        color: #464646;
+      }
+      #member2_text {
+        position: absolute;
+        width: 30%;
+        z-index: 4;
+
+        font-family: "Noto Sans KR", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.8vmax;
+
+        margin-top: 60.3%;
+        margin-left: 66%;
+
+        color: #323232;
+      }
+      #member2_text2 {
+        position: absolute;
+        width: 30%;
+        z-index: 4;
+
+        font-family: "Noto Sans KR", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.8vmax;
+
+        margin-top: 67.5%;
+        margin-left: 58.6%;
+
+        color: #464646;
+      }
+      #member3_text {
+        position: absolute;
+        width: 30%;
+        z-index: 4;
+
+        font-family: "Noto Sans KR", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.8vmax;
+
+        margin-top: 93%;
+        margin-left: 36%;
+
+        color: #323232;
+      }
+      #member3_text2 {
+        position: absolute;
+        width: 30%;
+        z-index: 4;
+
+        font-family: "Noto Sans KR", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.8vmax;
+
+        margin-top: 101%;
+        margin-left: 28.6%;
+
+        color: #464646;
+      }
+      #member4_text {
+        position: absolute;
+        width: 30%;
+        z-index: 4;
+
+        font-family: "Noto Sans KR", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.8vmax;
+
+        margin-top: 127%;
+        margin-left: 66%;
+
+        color: #323232;
+      }
+      #member4_text2 {
+        position: absolute;
+        width: 30%;
+        z-index: 4;
+
+        font-family: "Noto Sans KR", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.8vmax;
+
+        margin-top: 134.5%;
+        margin-left: 58.6%;
+
+        color: #464646;
+      }
+      #member5_text {
+        position: absolute;
+        width: 30%;
+        z-index: 4;
+
+        font-family: "Noto Sans KR", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.8vmax;
+
+        margin-top: 160.5%;
+        margin-left: 36%;
+
+        color: #323232;
+      }
+      #member5_text2 {
+        position: absolute;
+        width: 30%;
+        z-index: 4;
+
+        font-family: "Noto Sans KR", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.8vmax;
+
+        margin-top: 168%;
+        margin-left: 28.6%;
+
+        color: #464646;
+      }
+
+      .Mfootertxt {
+        position: absolute;
+
+        font-family: "Noto Sans KR", sans-serif;
+        margin-top: 177%;
+        margin-left: 19%;
+        z-index: 4;
+        color: white;
+      }
+
+      .Mfi {
+        position: absolute;
+
+        margin-top: 26%;
+        width: 4%;
+      }
+
+      .t2 {
+        margin-left: 5%;
+        margin-top: 24%;
+        font-weight: 700;
+        font-size: 1.5em;
+        letter-spacing: 0.2em;
+      }
+
+      .t1 {
+        margin-top: 3%;
+        font-weight: 200;
+        font-size: 0.2em;
+      }
+
+      .t3 {
+        margin-top: -2%;
+        font-weight: 200;
+        font-size: 0.2em;
+      }
+
+      .bt3 {
+        font-weight: 500;
+        font-size: 1em;
+      }
+
+      .t4 {
+        margin-top: -2%;
+        font-weight: 200;
+        font-size: 0.2em;
+      }
+      .bt4 {
+        font-weight: 500;
+        font-size: 1em;
+      }
+
+      .t5 {
+        margin-top: -2%;
+        font-weight: 200;
+        font-size: 0.2em;
+      }
+
+      .bt5 {
+        font-weight: 500;
+        font-size: 1em;
+      }
+
+      .t6 {
+        position: absolute;
+        margin-left: 65%;
+        margin-top: 200.5%;
+        font-size: 0.3em;
+        z-index: 5;
+        font-family: "Noto Sans KR", sans-serif;
+        color: white;
+        font-weight: 200;
+      }
+    </style>
+  </head>
+  <header>
+    <a href="./index.html"><img class="logo" src="./img/logo.png" /></a>
+    <div class="headmenu_wrap">
+      <ul class="headmenu">
+        <li class="point"><a href="./project.html">PROJECTS</a></li>
+        <li onclick="DropMenu()" id="members">
+          <a href="#">MEMBERS</a>
+          <ul style="padding: 0">
+            <li id="sw" class="members_list">
+              <a href="./soft.html">Software</a>
+            </li>
+            <li id="sol" class="members_list">
+              <a href="./sol.html">Solution</a>
+            </li>
+            <li id="dg" class="members_list">
+              <a href="./design.html">Design</a>
+            </li>
+          </ul>
+        </li>
+        <li class="point"><a href="./rules.html">RULES</a></li>
+        <li style="border-right: 1px solid #469d73">
+          <a href="./link.html">LINKS&FAQ</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <body>
+    <p id="Title">SOFTWARE</p>
+    <p id="member1_text">
+      Name : 김지우<br />
+      Etc : 13<br />
+      Class : 1106<br />
+      Mbti : INTP<br />
+    </p>
+    <p id="member1_text2">태어난 김에 열심히 살아보자~!~!~!~!</p>
+    <p id="member2_text">
+      Name : 안서연<br />
+      Etc : 13<br />
+      Class : 1209<br />
+      Mbti : INFP<br />
+    </p>
+    <p id="member2_text2">미림다니고 시키는 거 다 해요...~~</p>
+    <p id="member3_text">
+      Name : 임수연<br />
+      Etc : 12<br />
+      Class : 2108<br />
+      Mbti : ENTJ<br />
+    </p>
+    <p id="member3_text2">
+      안녕하세요? 제가 솦과 짱입니다 노는게<br />제일좋음~~
+    </p>
+    <p id="member4_text">
+      Name : 박승채<br />
+      Etc : 12<br />
+      Class : 2208<br />
+      Mbti : INFP<br />
+    </p>
+    <p id="member4_text2">안냥?나는 찌지리야…우리 친구하자<br />~>_<</p>
+    <p id="member5_text">
+      Name : 권하은<br />
+      Etc : 12<br />
+      Class : 2202<br />
+      Mbti : INFP<br />
+    </p>
+    <p id="member5_text2">솦과에서 제일 바보인 권하은입니다!!</p>
+    <img id="Title_circle" src="./img/Title_circle.png" />
+    <img id="background_obj1" src="./img/background_obj1.png" width="100%" />
+    <img id="background_obj2" src="./img/background_obj2.png" width="100%" />
+    <img id="member1" src="./img/member1.png" />
+    <img id="member2" src="./img/member2.png" />
+    <img id="member3" src="./img/member3.png" />
+    <img id="member4" src="./img/member4.png" />
+    <img id="member5" src="./img/member5.png" />
+    <img id="footer" src="./img/footer.png" />
+
+    <div class="Mfootertxt">
+      <div class="Mfi">
+        <img src="./img/Mfi.png" width="100%" />
+      </div>
+
+      <div class="t2">WOOCHINDONG</div>
+
+      <div class="t1">
+        제작 : 우리친해요동아리 일동 위치 : (08821) 서울시 관악구 호암로 546
+        미림여자정보과학고등학교 응용1실
+        <br />
+        우리친해요동아리 일동 : 권하은 금나리 김지우 박승채 박하은 안서연 양지아
+        오은채 인서진 임수연 엄희주 정유진 고낙은
+      </div>
+
+      <br />
+
+      <div class="t3">이메일 문의</div>
+
+      <div class="bt3">woochindong@gamil.com</div>
+      <br />
+      <div class="t4">대표번호</div>
+
+      <div class="bt4">02-872-4071</div>
+      <br />
+      <div class="t5">FAX</div>
+
+      <div class="bt5">02-887-0856</div>
+      <br />
+    </div>
+
+    <div class="t6">
+      개인정보 보호 방침&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;동아리
+      정보&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copyright 2021 by
+      WOOCHINDONG all right reserved.
+    </div>
+  </body>
+</html>
+<script>
+  let cnt_li = 0;
+  function DropMenu() {
+    cnt_li++;
+    if (cnt_li % 2 == 0) {
+      document.getElementById("members").style.overflow = "hidden";
+      document.getElementById("members").style.height = "0px";
+    } else {
+      document.getElementById("members").style.overflow = "none";
+      document.getElementById("members").style.height = "200px";
+    }
+  }
+</script>

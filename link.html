@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>우친동 홈페이지</title>
+  </head>
+  <style>
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+      font-family: "Noto Sans KR", sans-serif;
+    }
+    .wrap {
+      padding-top: 9%;
+      background-image: url("./img//Lf1.png"), url("./img//Lf2.png");
+      background-repeat: no-repeat;
+      background-size: 25%, 58%;
+      background-position: 0% 170px, 100% 83.5%;
+    }
+    .title {
+      font-family: "Inter", sans-serif;
+      font-weight: 700;
+      background-image: url("./img/Ltitc.png");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      padding: 0;
+      width: 10%;
+      height: 50px;
+      margin-left: 45%;
+      margin-right: 45%;
+      text-align: center;
+      line-height: 3;
+      position: absolute;
+    }
+    .link_header {
+      height: 43%;
+      border-radius: 30px 30px 0px 0px;
+    }
+    .link_box {
+      padding-top: 10%;
+      text-align: center;
+      height: 47%;
+      background-color: #f6f6f6;
+      border-radius: 0px 0px 30px 30px;
+    }
+    #link_1 {
+      background-color: #f2de68;
+    }
+    #link_2 {
+      background-color: #469d73;
+    }
+    #link_3 {
+      background-color: #98d994;
+    }
+    .link > div > img {
+      margin-top: 6%;
+      margin-left: 10%;
+      width: 26.25px;
+      height: 24.12px;
+    }
+    .link > div > a {
+      float: right;
+      font-size: 14px;
+      margin-top: 21px;
+      margin-right: 9%;
+      width: 59px;
+      height: 19px;
+      text-decoration: underline;
+    }
+    .link_wrap {
+      height: 130px;
+      width: 60%;
+      margin-left: 20%;
+      margin-top: 10%;
+      margin-bottom: 6%;
+    }
+    .link {
+      width: 32.2%;
+      height: 100%;
+      float: left;
+    }
+    #link_center {
+      margin-right: 1.7%;
+      margin-left: 1.7%;
+    }
+    .question {
+      margin-bottom: 20px;
+      width: 100%;
+      height: 62px;
+      border-radius: 30px;
+      padding-top: 37px;
+      padding-right: 4%;
+      padding-left: 50px;
+      background-color: #f8f8f8;
+      overflow: hidden;
+    }
+    .questions {
+      width: 54%;
+      margin-left: 20.2%;
+      margin-top: 16%;
+      padding-bottom: 33%;
+    }
+    .question > button > img {
+      width: 15px;
+    }
+    .footer {
+      margin: 0;
+      padding: 0;
+      height: 375px;
+      background-image: url("./img/Lfooter.png");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: 100%;
+    }
+    button {
+      border: none;
+      background: none;
+    }
+    .question > button {
+      float: right;
+      margin-top: 3px;
+    }
+    .answer {
+      margin-top: 40px;
+    }
+    a {
+      color: white;
+    }
+    header {
+      font-family: "Inter", sans-serif;
+      width: 100%;
+      height: 50px;
+      background-image: url(./img/Rectangle\ 1.png);
+      position: fixed;
+      z-index: 10;
+    }
+    .logo {
+      width: 2.5%;
+      margin-top: 7px;
+      margin-left: 20%;
+      float: left;
+    }
+    .headmenu_wrap {
+      margin-top: 12px;
+      margin-left: 33%;
+      float: left;
+    }
+    .headmenu {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .headmenu > li {
+      display: inline;
+      float: left;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    .headmenu > li > a {
+      color: #469d73;
+      text-decoration: none;
+    }
+    .headmenu > li > ul > a {
+      color: #469d73;
+      text-decoration: none;
+    }
+    .point {
+      border-right: 1px solid #469d73;
+      border-left: 1px solid #469d73;
+    }
+    #sw:hover {
+      background-image: url(./img/Hit.png);
+      font-weight: 500;
+    }
+    #sol:hover {
+      background-image: url(./img/Him.png);
+      font-weight: 500;
+    }
+    #dg:hover {
+      background-image: url(./img/Hib.png);
+      font-weight: 500;
+    }
+    #sw {
+      margin-top: 15px;
+      padding-top: 20px;
+      padding-bottom: 10px;
+      background-image: url(./img/Hitbg.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+    #sol {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      background-image: url(./img/Himbg.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+    #dg {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      background-image: url(./img/Hibbg.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+    #members {
+      overflow: hidden;
+      height: 30px;
+      text-align: center;
+      padding: 0;
+    }
+    .members_list {
+      width: 136px;
+      height: 30px;
+    }
+    .members_list > a {
+      color: #469d73;
+      text-decoration: none;
+    }
+    .Mfootertxt {
+      position: absolute;
+
+      font-family: "Noto Sans KR", sans-serif;
+      margin-top: -25%;
+      margin-left: 19%;
+      z-index: 4;
+      color: white;
+    }
+
+    .Mfi {
+      position: absolute;
+
+      margin-top: 26%;
+      width: 4%;
+    }
+
+    .t2 {
+      margin-left: 5%;
+      margin-top: 24%;
+      font-weight: 700;
+      font-size: 1.5em;
+      letter-spacing: 0.2em;
+    }
+
+    .t1 {
+      margin-top: 3%;
+      font-weight: 200;
+      font-size: 0.2em;
+    }
+
+    .t3 {
+      margin-top: -2%;
+      font-weight: 200;
+      font-size: 0.2em;
+    }
+
+    .bt3 {
+      font-weight: 500;
+      font-size: 1em;
+    }
+
+    .t4 {
+      margin-top: -2%;
+      font-weight: 200;
+      font-size: 0.2em;
+    }
+    .bt4 {
+      font-weight: 500;
+      font-size: 1em;
+    }
+
+    .t5 {
+      margin-top: -2%;
+      font-weight: 200;
+      font-size: 0.2em;
+    }
+
+    .bt5 {
+      font-weight: 500;
+      font-size: 1em;
+    }
+    /*23.5*/
+    .t6 {
+      position: absolute;
+      margin-left: 65%;
+      margin-top: -2%;
+      font-size: 0.3em;
+      z-index: 5;
+      font-family: "Noto Sans KR", sans-serif;
+      color: white;
+      font-weight: 200;
+    }
+  </style>
+  <body>
+    <header>
+      <a href="./index.html"><img class="logo" src="./img/logo.png" /></a>
+      <div class="headmenu_wrap">
+        <ul class="headmenu">
+          <li class="point"><a href="./project.html">PROJECTS</a></li>
+          <li onclick="DropMenu()" id="members">
+            <a href="#">MEMBERS</a>
+            <ul style="padding: 0">
+              <li id="sw" class="members_list">
+                <a href="./soft.html">Software</a>
+              </li>
+              <li id="sol" class="members_list">
+                <a href="./sol.html">Solution</a>
+              </li>
+              <li id="dg" class="members_list">
+                <a href="./design.html">Design</a>
+              </li>
+            </ul>
+          </li>
+          <li class="point"><a href="./rules.html">RULES</a></li>
+          <li style="border-right: 1px solid #469d73">
+            <a href="./link.html">LINKS&FAQ</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="wrap">
+      <div class="title">LINKS</div>
+      <div class="link_wrap">
+        <div class="link">
+          <div class="link_header" id="link_1">
+            <img src="./img/LI1.png" /><a href="#">바로가기</a>
+          </div>
+          <div class="link_box">@ Uchin-dong22</div>
+        </div>
+        <div class="link" id="link_center">
+          <div class="link_header" id="link_2">
+            <img src="./img/LI2.png" /><a
+              href="https://www.instagram.com/mirim_woochindong/"
+              >바로가기</a
+            >
+          </div>
+          <div class="link_box">@mirim_woochindong</div>
+        </div>
+        <div class="link">
+          <div class="link_header" id="link_3">
+            <img src="./img/LI3.png" /><a
+              href="https://mail.google.com/mail/u/2/?ogbl#inbox"
+              >바로가기</a
+            >
+          </div>
+          <div class="link_box">woochindong@gmail.com</div>
+        </div>
+      </div>
+      <div class="title">QUESTIONS</div>
+      <div class="questions">
+        <div class="question" id="drop1">
+          Q . 우친동은 뭐하는 동아리인가유?
+          <button onclick="Dropqeustion('drop1')">
+            <img src="./img//L_down_icon.png" class="drop_img" />
+          </button>
+          <div class="answer">
+            A . 선후배 친목도모 및 즐거운 게임과 프로젝트를 진행하는
+            동아리랍니다~ 짜잔!
+          </div>
+        </div>
+        <div class="question" id="drop2">
+          Q . 우친동만의 장점은 무엇인가요?
+          <button onclick="Dropqeustion('drop2')">
+            <img src="./img//L_down_icon.png" class="drop_img" />
+          </button>
+          <div class="answer">
+            A . 다른 친구들 이야기를 들어보면 선후배 관계가 매우 삐꺽 대는
+            느낌인데 우리는 다같이 소통하는 분위기라 좋아요
+            <br />
+            A . 멋지신 선배님들과 함께하는 즐거운 우친동과 함께 하는 멋진
+            프로젝트요
+            <br />
+            A . 놀땐제놀일할땐제일 <-이거뭐임
+          </div>
+        </div>
+        <div class="question" id="drop3">
+          Q . 우친동에선 어떤 활동을 하나요?
+          <button onclick="Dropqeustion('drop3')">
+            <img src="./img//L_down_icon.png" class="drop_img" />
+          </button>
+          <div class="answer">
+            A . 친목도모를 위한 수다와 보드게임 ! 포트폴리오를 쌓을 수 있는
+            프로젝트까지 여러가지 활동을 진행하고 있습니다.
+          </div>
+        </div>
+        <div class="question" id="drop4">
+          Q . 우친동은 무슨 뜻 인가요?
+          <button onclick="Dropqeustion('drop4')">
+            <img src="./img//L_down_icon.png" class="drop_img" />
+          </button>
+          <div class="answer">
+            A . 우친동은 우리 친해요 동아리의 줄인말 입니다
+          </div>
+        </div>
+        <div class="question" id="drop5">
+          Q . 우친동 지원 방법이 궁급해요~
+          <button onclick="Dropqeustion('drop5')">
+            <img src="./img//L_down_icon.png" class="drop_img" />
+          </button>
+          <div class="answer">
+            A . 동아리 모집기간에 해당 링크를 통해 신청서를 작성해 주세요!
+          </div>
+        </div>
+      </div>
+      <div class="footer"></div>
+    </div>
+    <div class="Mfootertxt">
+      <div class="Mfi">
+        <img src="./img/Mfi.png" width="100%" />
+      </div>
+
+      <div class="t2">WOOCHINDONG</div>
+
+      <div class="t1">
+        제작 : 우리친해요동아리 일동 위치 : (08821) 서울시 관악구 호암로 546
+        미림여자정보과학고등학교 응용1실
+        <br />
+        우리친해요동아리 일동 : 권하은 금나리 김지우 박승채 박하은 안서연 양지아
+        오은채 인서진 임수연 엄희주 정유진 고낙은
+      </div>
+
+      <br />
+
+      <div class="t3">이메일 문의</div>
+
+      <div class="bt3">woochindong@gamil.com</div>
+      <br />
+      <div class="t4">대표번호</div>
+
+      <div class="bt4">02-872-4071</div>
+      <br />
+      <div class="t5">FAX</div>
+
+      <div class="bt5">02-887-0856</div>
+      <br />
+    </div>
+
+    <div class="t6">
+      개인정보 보호 방침&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;동아리
+      정보&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copyright 2021 by
+      WOOCHINDONG all right reserved.
+    </div>
+  </body>
+</html>
+<script>
+  let cnt = [0, 0, 0, 0, 0];
+  let index;
+  function Dropqeustion(thisId) {
+    switch (thisId) {
+      case "drop1":
+        index = 0;
+        break;
+      case "drop2":
+        index = 1;
+        break;
+      case "drop3":
+        index = 2;
+        break;
+      case "drop4":
+        index = 3;
+        break;
+      case "drop5":
+        index = 4;
+        break;
+    }
+    if (++cnt[index] % 2 == 0) {
+      document.getElementById(thisId).style.height = "62px";
+      document.getElementsByClassName("drop_img")[index].src =
+        "./img//L_down_icon.png";
+      document.getElementById("question").style.overflow = "hidden";
+    } else {
+      document.getElementById(thisId).style.height = "150px";
+      document.getElementsByClassName("drop_img")[index].src =
+        "./img//L_up_icon.png";
+      document.getElementById("question").style.overflow = "none";
+    }
+  }
+
+  let cnt_li = 0;
+  function DropMenu() {
+    cnt_li++;
+    if (cnt_li % 2 == 0) {
+      document.getElementById("members").style.overflow = "hidden";
+      document.getElementById("members").style.height = "30px";
+    } else {
+      document.getElementById("members").style.overflow = "none";
+      document.getElementById("members").style.height = "200px";
+    }
+  }
+</script>
